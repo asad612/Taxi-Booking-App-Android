@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taxibooking">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".DoneActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".DestinationActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".PaymentActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".HelpActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".InviteActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".NumberActivity" />
+        <activity android:name=".ForgotActivity" />
+        <activity android:name=".VerifyActivity" />
+        <activity android:name=".CountryActivity" />
+        <activity android:name=".PanelActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>
