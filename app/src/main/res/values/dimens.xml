@@ -5,4 +5,13 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="corner_radius">5dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="field_height">45dp</dimen>
+
+    <dimen name="font_12">12dp</dimen>
+    <dimen name="font_14">14dp</dimen>
+    <dimen name="font_16">16dp</dimen>
+    <dimen name="font_18">18dp</dimen>
 </resources>
