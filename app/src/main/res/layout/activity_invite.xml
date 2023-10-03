@@ -54,195 +54,136 @@
         android:background="@color/white">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-            <LinearLayout
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ali"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="Alastair Cook" />
             <View
                 android:layout_width="match_parent"
                 android:background="@color/colorTheme"
-                android:layout_height="2dp"/>
-            <LinearLayout
+                android:layout_height="1dp"/>
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Babar Azam"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="Babar Azam" />
             <View
                 android:layout_width="match_parent"
                 android:background="@color/colorTheme"
-                android:layout_height="2dp"/>
-            <LinearLayout
+                android:layout_height="1dp"/>
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Chris Gayle"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="Chris Gayle" />
             <View
                 android:layout_width="match_parent"
                 android:background="@color/colorTheme"
-                android:layout_height="2dp"/>
-            <LinearLayout
+                android:layout_height="1dp"/>
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="De Villiers"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="De Villiers" />
             <View
                 android:layout_width="match_parent"
                 android:background="@color/colorTheme"
-                android:layout_height="2dp"/>
-            <LinearLayout
+                android:layout_height="1dp"/>
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Henry Nicholls"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="Henry Nicholls" />
             <View
                 android:layout_width="match_parent"
                 android:background="@color/colorTheme"
-                android:layout_height="2dp"/>
-            <LinearLayout
+                android:layout_height="1dp"/>
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ishan Kishan"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="Ishan Kishan" />
             <View
                 android:layout_width="match_parent"
                 android:background="@color/colorTheme"
-                android:layout_height="2dp"/>
-            <LinearLayout
+                android:layout_height="1dp"/>
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Joe Root"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="Joe Root" />
             <View
                 android:layout_width="match_parent"
                 android:background="@color/colorTheme"
-                android:layout_height="2dp"/>
-            <LinearLayout
+                android:layout_height="1dp"/>
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MS Dhoni"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="MS Dhoni" />
             <View
                 android:layout_width="match_parent"
                 android:background="@color/colorTheme"
-                android:layout_height="2dp"/>
-            <LinearLayout
+                android:layout_height="1dp"/>
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Neil O brain"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="Neil O brain" />
             <View
                 android:layout_width="match_parent"
                 android:background="@color/colorTheme"
-                android:layout_height="2dp"/>
-            <LinearLayout
+                android:layout_height="1dp"/>
+            <RadioButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Virat Kohli"
-                    android:textSize="25dp"/>
-            </LinearLayout>
+                android:textSize="@dimen/font_18"
+                android:text="Shahid Afridi" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorTheme"
+                android:layout_height="1dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textSize="@dimen/font_18"
+                android:text="Virat Kohli" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorTheme"
+                android:layout_height="1dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textSize="@dimen/font_18"
+                android:text="Wasim Akram" />
         </LinearLayout>
     </ScrollView>
 
