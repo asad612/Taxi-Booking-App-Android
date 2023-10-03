@@ -14,24 +14,16 @@ public class DestinationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_destination);
-        final SearchView dropoffloc = findViewById(R.id.dropoffloc);
+        final SearchView dropoffloc = findViewById(R.id.dropoff);
 
-        ImageView previous = findViewById(R.id.previous);
-        previous.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DestinationActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
+        findViewById(R.id.back).setOnClickListener(v -> {
+            Intent intent = new Intent(DestinationActivity.this, HomeActivity.class);
+            startActivity(intent);
         });
-        Button next = findViewById(R.id.next);
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dropoff = dropoffloc.getQuery().toString();
-                Intent intent = new Intent(DestinationActivity.this, DoneActivity.class);
-                startActivity(intent);
-            }
+        findViewById(R.id.next).setOnClickListener(v -> {
+            dropoff = dropoffloc.getQuery().toString();
+            Intent intent = new Intent(DestinationActivity.this, DoneActivity.class);
+            startActivity(intent);
         });
     }
 }

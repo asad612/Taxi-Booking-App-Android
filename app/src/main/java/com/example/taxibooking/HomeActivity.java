@@ -25,23 +25,11 @@ public class HomeActivity extends AppCompatActivity
         setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-        final SearchView pickuploc = findViewById(R.id.pickupLoc);
-        Button next = findViewById(R.id.next);
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                pickup = pickuploc.getQuery().toString();
-                Intent intent = new Intent(HomeActivity.this, DestinationActivity.class);
-                startActivity(intent);
-            }
+        final SearchView pickuploc = findViewById(R.id.pickup);
+        findViewById(R.id.next).setOnClickListener(v -> {
+            pickup = pickuploc.getQuery().toString();
+            Intent intent = new Intent(HomeActivity.this, DestinationActivity.class);
+            startActivity(intent);
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -51,13 +39,9 @@ public class HomeActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
         View view = navigationView.getHeaderView(0);
-        TextView profile = view.findViewById(R.id.view_profile);
-        profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
-                startActivity(intent);
-            }
+        view.findViewById(R.id.view_profile).setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+            startActivity(intent);
         });
     }
 

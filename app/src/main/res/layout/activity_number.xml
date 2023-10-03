@@ -28,7 +28,6 @@
         android:text="Verify your Number"/>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="@dimen/field_height"
         android:layout_gravity="center"

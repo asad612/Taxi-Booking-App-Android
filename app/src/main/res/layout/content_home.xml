@@ -7,52 +7,46 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".HomeActivity"
     android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp"
     tools:showIn="@layout/app_bar_home">
-    <ScrollView
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_18"
+        android:text="Select Pickup Location"
+        android:layout_gravity="center"/>
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/colorTheme"
-                android:textStyle="bold"
-                android:textSize="30dp"
-                android:text="Select Pickup Location"
-                android:layout_gravity="center"/>
-            <SearchView
-                android:id="@+id/pickupLoc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop= "5dp"></SearchView>
+        android:layout_height="@dimen/field_height"
+        android:layout_marginVertical="5dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardBackgroundColor="@color/white">
+    <SearchView
+        android:id="@+id/pickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+    </com.google.android.material.card.MaterialCardView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_gravity="center"
-                android:background="@drawable/google" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/google" />
 
-            <Button
-                android:id="@+id/next"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="20dp"
-                android:layout_gravity="center"
-                android:background="@color/colorTheme"
-                android:textColor="@color/white"
-                android:text="Next"/>
-        </LinearLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@color/colorTheme"
+        android:textColor="@color/white"
+        android:text="Next"/>
 </LinearLayout>
