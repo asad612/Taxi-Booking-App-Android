@@ -12,13 +12,9 @@ public class HelpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
-        ImageView home = findViewById(R.id.goback);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HelpActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
+        findViewById(R.id.back).setOnClickListener(v -> {
+            Intent intent = new Intent(HelpActivity.this, HomeActivity.class);
+            startActivity(intent);
         });
     }
 }

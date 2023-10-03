@@ -15,7 +15,7 @@
         android:id="@+id/imageView"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_margin="20dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="@color/colorTheme"
         android:background="@drawable/taxi" />
 
@@ -42,7 +42,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/field_height"
         android:layout_gravity="center"
-        android:layout_marginVertical="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="60dp"
         app:cardCornerRadius="@dimen/corner_radius"
         app:cardBackgroundColor="@color/transparent">
         <com.google.android.material.textview.MaterialTextView

@@ -12,13 +12,9 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        Button home = findViewById(R.id.goback);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
+        findViewById(R.id.back).setOnClickListener(v -> {
+            Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -10,13 +10,19 @@ import android.widget.ImageView;
 import com.braintreepayments.cardform.view.CardForm;
 
 public class PaymentActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+        findViewById(R.id.back).setOnClickListener(v -> {
+            Intent intent = new Intent(PaymentActivity.this, HomeActivity.class);
+            startActivity(intent);
+        });
+        findViewById(R.id.btnPay).setOnClickListener(v -> {
+            Intent intent = new Intent(PaymentActivity.this, HomeActivity.class);
+            startActivity(intent);
+        });
         CardForm cardForm = findViewById(R.id.card_form);
-        Button buy = findViewById(R.id.btnBuy);
 
         cardForm.cardRequired(true)
                 .expirationRequired(true)
@@ -26,13 +32,5 @@ public class PaymentActivity extends AppCompatActivity {
                 .mobileNumberExplanation("SMS is required on this number")
                 .setup(PaymentActivity.this);
 
-        ImageView home = findViewById(R.id.goback);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PaymentActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }
