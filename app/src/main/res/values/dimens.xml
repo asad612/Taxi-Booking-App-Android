@@ -14,4 +14,5 @@
     <dimen name="font_14">14dp</dimen>
     <dimen name="font_16">16dp</dimen>
     <dimen name="font_18">18dp</dimen>
+    <dimen name="font_22">22dp</dimen>
 </resources>
