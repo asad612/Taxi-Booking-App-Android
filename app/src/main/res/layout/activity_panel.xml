@@ -4,53 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorTheme"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@color/white"
     tools:context=".PanelActivity">
 
-    <ScrollView
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorTheme"
+        android:background="@drawable/taxi" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btn_signIn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:id="@+id/email_login_form"
+        android:layout_height="@dimen/field_height"
+        android:layout_gravity="center"
+        android:layout_marginVertical="15dp"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:cardBackgroundColor="@color/transparent">
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical">
+            android:text="Sign In"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/white"
+            android:background="@color/colorTheme" />
+    </com.google.android.material.card.MaterialCardView>
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="100dp"
-                android:backgroundTint="@color/white"
-                android:background="@drawable/taxi" />
-
-            <Button
-                android:id="@+id/signIn"
-                style="?android:textAppearanceSmall"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
-                android:background="@color/white"
-                android:text="SIGN IN"
-                android:textSize="18dp"
-                android:textColor="@color/colorTheme"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/signup"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:background="@color/white"
-                android:text="SIGN UP"
-                android:textSize="18dp"
-                android:textColor="@color/colorTheme"
-                android:textStyle="bold" />
-
-
-        </LinearLayout>
-    </ScrollView>
-
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btn_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:layout_gravity="center"
+        android:layout_marginVertical="15dp"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:cardBackgroundColor="@color/transparent">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/white"
+            android:background="@color/colorTheme" />
+    </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="20dp"
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".NumberActivity">
@@ -12,69 +15,66 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
         android:backgroundTint="@color/colorTheme"
         android:background="@drawable/taxi" />
     <TextView
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginVertical="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="30dp"
+        android:textSize="@dimen/font_18"
         android:textStyle="bold"
-        android:textColor="@color/colorTheme"
+        android:textColor="@color/black"
         android:text="Verify your Number"/>
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardBackgroundColor="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pak"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/white"
+                android:hint="03xx xxxxxxx"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/pak"/>
-    <EditText
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorTheme"
-        android:hint="  03xx xxxxxxx"
-        android:textSize="35dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
-    </LinearLayout>
-    
-    
-    
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="150dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_arrow_back" />
 
         <ImageView
-            android:layout_marginRight="70dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/ic_arrow_back"
-            android:id="@+id/previous"/>
-        <ImageView
-            android:layout_marginLeft="70dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/ic_arrow_forward_"
-            android:id="@+id/next"/>
-
-    </LinearLayout>
+            android:id="@+id/next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_arrow_forward_" />
+    </RelativeLayout>
 
 
 </LinearLayout>
